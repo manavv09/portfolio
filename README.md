@@ -4,7 +4,7 @@ This is my personal developer portfolio built using **React** and **Tailwind CSS
 It showcases my projects, skills, and provides a way to download my resume.
 
 🔗 **Live Demo:**
-https://manavv09.github.io/Canvas/
+
 
 ---
 
