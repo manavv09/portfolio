@@ -23,7 +23,7 @@ const projects = [
   {
     title: "Weather App",
     desc: "Weather app using API with clean UI.",
-    live: "weather-app-eta-peach-27.vercel.app",
+    live: null,
     github: "https://github.com/manavv09/Weather-App",
     tech: ["React", "API", "Tailwind"],
   },
