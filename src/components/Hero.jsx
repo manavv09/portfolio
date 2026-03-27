@@ -15,13 +15,13 @@ export default function Hero() {
           </h1>
 
           <p className="mt-4 text-lg md:text-xl text-white/80">
-            Full Stack Developer
+            MERN StackDeveloper
           </p>
 
           <p className="mt-5 text-white/70 leading-relaxed">
-            I’m a fresher Full stack developer who loves building clean,
+            I’m a fresher MERN stack developer who loves building clean,
             responsive and modern web applications. I enjoy working on frontend
-            UI, APIs, and full-stack projects using React, Node.js and MongoDB.
+            UI, APIs.
           </p>
 
           <div className="mt-7 flex flex-wrap gap-3">
