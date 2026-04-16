@@ -19,7 +19,7 @@ export default function Hero() {
   };
 
   const skills = [
-    "React", "Node.js", "Express", "MongoDB",
+    "React", "Node.js", "MongoDB",
     "Tailwind", "REST APIs", "JavaScript", "UI/UX",
   ];
 
@@ -55,11 +55,13 @@ export default function Hero() {
           </motion.h1>
 
           <motion.p variants={itemVariants} className="text-xl md:text-2xl text-white/80 font-medium mb-6">
-            Full Stack <span className="text-white">MERN Developer</span>
+            <span className="text-white">Frontend Developer</span>
           </motion.p>
 
           <motion.p variants={itemVariants} className="text-white/60 leading-relaxed text-lg max-w-xl mb-10">
-            Crafting high-performance, visually stunning web applications with the latest technologies. Passionate about clean code and exceptional user experiences.
+            {/* Crafting high-performance, visually stunning web applications with the latest technologies. Passionate about clean code and exceptional user experiences. */}
+            I am a frontend developer with a strong foundation in web development and a passion for creating beautiful, user-friendly interfaces. I am a quick learner and am always looking to expand my skill set.
+            Currently learning backend development and AI.
           </motion.p>
 
           <motion.div variants={itemVariants} className="flex flex-wrap gap-4">
@@ -113,7 +115,6 @@ export default function Hero() {
             
             <p className="text-sm font-bold text-accent-secondary uppercase tracking-widest mb-6">Expertise</p>
             <h3 className="text-3xl font-bold mb-8">
-              MERN Stack <br /> Mastery
             </h3>
 
             <div className="grid grid-cols-2 gap-4 mb-8">

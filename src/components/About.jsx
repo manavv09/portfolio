@@ -24,7 +24,7 @@ export default function About() {
 
           <div className="space-y-6 text-white/70 text-lg leading-relaxed">
             <p>
-              I’m a dedicated <span className="text-white font-semibold">MERN Stack Developer</span> with a relentless focus on creating high-performance, visually stunning web applications. I believe that great software is the intersection of clean architecture and exceptional user experience.
+              I’m a dedicated <span className="text-white font-semibold">Frontend Developer</span> with a relentless focus on creating high-performance, visually stunning web applications. I believe that great software is the intersection of clean architecture and exceptional user experience.
             </p>
 
             <p>

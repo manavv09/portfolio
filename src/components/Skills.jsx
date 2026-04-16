@@ -10,19 +10,19 @@ import {
 
 const skillCategories = [
   {
-    title: "Frontend Mastery",
+    title: "Frontend",
     icon: <Code2 className="text-accent-primary" />,
     skills: ["React 19", "JavaScript (ES6+)", "Tailwind CSS", "HTML5 & CSS3"],
   },
   {
-    title: "Backend Core",
+    title: "Backend",
     icon: <Server className="text-accent-secondary" />,
-    skills: ["Node.js", "Express.js", "RESTful APIs", "JWT Auth"],
+    skills: ["Node.js", "Express.js", "RESTful APIs"],
   },
   {
     title: "Data & Storage",
     icon: <Database className="text-accent-primary" />,
-    skills: ["MongoDB", "Mongoose", "Firebase", "State Management"],
+    skills: ["MongoDB", "Firebase", "State Management"],
   },
   {
     title: "Dev & Tools",
@@ -60,6 +60,7 @@ export default function Skills() {
           </h2>
           <p className="mt-4 text-white/60 max-w-xl text-lg">
             A comprehensive overview of the technologies I use to build scalable, high-performance web applications.
+            I want to learn more about AI. I make a project of AI chat App using Gemini API.
           </p>
         </motion.div>
 
