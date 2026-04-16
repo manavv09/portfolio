@@ -3,20 +3,28 @@ import { Github, ExternalLink, Globe, Layout, Code } from "lucide-react";
 
 const projects = [
   {
+    title: "Ai-Chat-App",
+    desc: "An AI-powered chatbot application that can answer your questions and provide helpful information.",
+    live: "https://ai-chat-app-two-henna.vercel.app/",
+    github: "https://github.com/manavv09/Ai-Chat-App",
+    tech: ["React", "Vite", "Tailwind CSS", "Firebase", "Gemini API"],
+    category: "Web App",
+  },
+  {
     title: "Currency Converter",
     desc: "A high-performance currency conversion engine with real-time exchange rates and a precision-focused UI.",
     live: "https://manavv09.github.io/Currency-Exchange-Rate/",
     github: "https://github.com/manavv09/Currency-Exchange-Rate",
     tech: ["React", "Rest API", "Tailwind"],
-    category: "Web App"
+    category: "Web App",
   },
   {
-    title: "Todo Mastery",
+    title: "Todo List",
     desc: "Advanced task management system with persistent storage, filtering, and seamless user interaction design.",
     live: "https://manavv09.github.io/TODO-List/",
     github: "https://github.com/manavv09/TODO-List",
     tech: ["React", "JavaScript", "LocalStorage"],
-    category: "Tooling"
+    category: "Tooling",
   },
   {
     title: "Creative Canvas",
@@ -24,7 +32,7 @@ const projects = [
     live: "https://manavv09.github.io/Canvas/",
     github: "https://github.com/manavv09/Canvas",
     tech: ["HTML5 Canvas", "Modern CSS", "JS"],
-    category: "Graphics"
+    category: "Graphics",
   },
   {
     title: "Dynamic Weather",
@@ -32,7 +40,7 @@ const projects = [
     live: null,
     github: "https://github.com/manavv09/Weather-App",
     tech: ["React", "OpenWeather API", "Vite"],
-    category: "Web App"
+    category: "Web App",
   },
 ];
 
@@ -49,7 +57,12 @@ export default function Projects() {
 
   const itemVariants = {
     hidden: { opacity: 0, scale: 0.95, y: 30 },
-    visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
   };
 
   return (
@@ -64,7 +77,8 @@ export default function Projects() {
             Featured <span className="text-accent-secondary">Creations</span>
           </h2>
           <p className="mt-4 text-white/60 max-w-xl text-lg">
-            A selection of my recent works where architecture meets creativity. Each project solves a unique challenge.
+            A selection of my recent works where architecture meets creativity.
+            Each project solves a unique challenge.
           </p>
         </motion.div>
 
@@ -73,14 +87,17 @@ export default function Projects() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
         >
-          <a 
-            href="https://github.com/manavv09" 
+          <a
+            href="https://github.com/manavv09"
             target="_blank"
             rel="noreferrer"
             className="group flex items-center gap-3 px-6 py-3 rounded-2xl glass hover:bg-white/10 transition-all font-semibold"
           >
             Check GitHub
-            <Github size={20} className="group-hover:rotate-12 transition-transform" />
+            <Github
+              size={20}
+              className="group-hover:rotate-12 transition-transform"
+            />
           </a>
         </motion.div>
       </div>
@@ -167,4 +184,3 @@ export default function Projects() {
     </section>
   );
 }
-
