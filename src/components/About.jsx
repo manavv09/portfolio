@@ -10,7 +10,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="px-6 py-24 max-w-7xl mx-auto relative">
+    <section id="about" className="px-6 py-16 md:py-24 max-w-7xl mx-auto relative">
       <div className="grid lg:grid-cols-2 gap-16 items-start">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -18,7 +18,7 @@ export default function About() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl md:text-5xl font-black mb-8">
+          <h2 className="text-[2.5rem] md:text-5xl font-black mb-8 leading-tight">
             The Journey <span className="text-accent-primary">of Craft</span>
           </h2>
 
@@ -70,7 +70,7 @@ export default function About() {
           className="relative"
         >
           <div className="absolute -inset-1 bg-gradient-to-r from-accent-primary to-accent-secondary rounded-[2.5rem] blur opacity-20" />
-          <div className="relative glass-card p-10 rounded-[2.5rem] border border-white/10">
+          <div className="relative glass-card p-6 md:p-10 rounded-3xl md:rounded-[2.5rem] border border-white/10">
             <h3 className="text-2xl font-bold mb-10 flex items-center gap-3">
               <span className="w-8 h-8 rounded-lg bg-accent-primary/20 flex items-center justify-center text-accent-primary">
                 <User size={18} />
@@ -88,7 +88,7 @@ export default function About() {
               {/* Special rendering for Role to avoid duplicate keys logic or just map correctly */}
               <div className="p-4 rounded-2xl bg-white/5 border border-white/5 group hover:bg-white/10 transition-all">
                 <p className="text-xs font-bold text-white/40 uppercase tracking-widest mb-1 group-hover:text-accent-primary transition-colors">Role</p>
-                <p className="text-xl font-bold text-white tracking-tight">MERN Stack Developer</p>
+                <p className="text-xl font-bold text-white tracking-tight">Frontend Developer</p>
               </div>
               <div className="p-4 rounded-2xl bg-white/5 border border-white/5 group hover:bg-white/10 transition-all">
                 <p className="text-xs font-bold text-white/40 uppercase tracking-widest mb-1 group-hover:text-accent-secondary transition-colors">Experience</p>

@@ -24,11 +24,11 @@ export default function Navbar() {
   return (
     <header 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-        scrolled ? "py-3 px-4" : "py-5 px-4"
+        scrolled ? "py-2 md:py-3 px-4" : "py-4 md:py-5 px-4"
       }`}
     >
       <nav 
-        className={`max-w-6xl mx-auto px-6 py-3 flex items-center justify-between transition-all duration-500 rounded-2xl ${
+        className={`max-w-6xl mx-auto px-4 md:px-6 py-3 flex items-center justify-between transition-all duration-500 rounded-2xl ${
           scrolled ? "glass shadow-2xl shadow-accent-primary/5 border-white/10" : "bg-transparent border-transparent"
         }`}
       >
@@ -96,36 +96,37 @@ export default function Navbar() {
       <AnimatePresence>
         {open && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden overflow-hidden mt-2"
+            initial={{ opacity: 0, height: 0, y: -20 }}
+            animate={{ opacity: 1, height: "auto", y: 0 }}
+            exit={{ opacity: 0, height: 0, y: -20 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="md:hidden overflow-hidden mt-3"
           >
-            <div className="flex flex-col items-center gap-5 py-8 rounded-2xl glass mx-auto max-w-[95%]">
+            <div className="flex flex-col items-center gap-4 py-8 rounded-[2rem] glass mx-auto max-w-[95%] border border-white/10 shadow-2xl">
               {navLinks.map((link) => (
                 <a 
                   key={link.name}
                   onClick={() => setOpen(false)} 
                   href={link.href}
-                  className="text-lg font-medium text-white/80 hover:text-white transition-colors"
+                  className="text-lg font-bold tracking-tight text-white/80 hover:text-white transition-colors"
                 >
                   {link.name}
                 </a>
               ))}
 
-              <div className="flex flex-col w-full px-10 gap-3 mt-2">
+              <div className="flex flex-col w-full px-8 gap-3 mt-4">
                 <a
                   href="/RESUME.pdf"
                   target="_blank"
                   rel="noreferrer"
-                  className="w-full py-3 rounded-xl border border-white/10 glass text-center font-semibold"
+                  className="w-full py-3.5 rounded-xl border border-white/10 glass text-center font-bold text-sm tracking-wide"
                 >
                   Resume
                 </a>
                 <a
                   href="#contact"
                   onClick={() => setOpen(false)}
-                  className="w-full py-3 rounded-xl bg-gradient-to-r from-accent-primary to-accent-secondary text-white text-center font-semibold"
+                  className="w-full py-3.5 rounded-xl bg-gradient-to-r from-accent-primary to-accent-secondary text-white text-center font-bold text-sm tracking-wide shadow-lg shadow-accent-primary/20"
                 >
                   Hire Me
                 </a>

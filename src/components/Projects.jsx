@@ -66,14 +66,14 @@ export default function Projects() {
   };
 
   return (
-    <section id="projects" className="px-6 py-24 max-w-7xl mx-auto">
+    <section id="projects" className="px-6 py-16 md:py-24 max-w-7xl mx-auto">
       <div className="flex flex-col md:flex-row md:items-center justify-between mb-16 gap-6">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-black">
+          <h2 className="text-[2.5rem] md:text-5xl font-black leading-tight">
             Featured <span className="text-accent-secondary">Creations</span>
           </h2>
           <p className="mt-4 text-white/60 max-w-xl text-lg">
@@ -113,13 +113,13 @@ export default function Projects() {
           <motion.div
             key={p.title}
             variants={itemVariants}
-            className="group relative glass-card rounded-[3rem] overflow-hidden border border-white/5"
+            className="group relative glass-card rounded-3xl md:rounded-[3rem] overflow-hidden border border-white/5"
           >
             {/* Project Card Background Effects */}
             <div className="absolute inset-0 bg-gradient-to-br from-accent-primary/5 via-transparent to-accent-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
             <div className="absolute top-0 right-0 w-64 h-64 bg-accent-primary/5 rounded-full blur-[80px] -mr-32 -mt-32" />
 
-            <div className="relative p-10 flex flex-col h-full">
+            <div className="relative p-6 md:p-10 flex flex-col h-full">
               <div className="flex items-center justify-between mb-8">
                 <span className="px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-[10px] font-bold uppercase tracking-widest text-accent-secondary group-hover:border-accent-secondary/30 transition-colors">
                   {p.category}
@@ -150,7 +150,7 @@ export default function Projects() {
                 ))}
               </div>
 
-              <div className="flex items-center gap-4 mt-auto">
+              <div className="flex flex-wrap items-center gap-4 mt-auto">
                 {p.live && (
                   <motion.a
                     whileHover={{ scale: 1.05 }}

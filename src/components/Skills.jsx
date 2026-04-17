@@ -48,14 +48,14 @@ export default function Skills() {
   };
 
   return (
-    <section id="skills" className="px-6 py-24 max-w-7xl mx-auto">
+    <section id="skills" className="px-6 py-16 md:py-24 max-w-7xl mx-auto">
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-black">
+          <h2 className="text-[2.5rem] md:text-5xl font-black leading-tight">
             Technical <span className="text-accent-primary">Arsenal</span>
           </h2>
           <p className="mt-4 text-white/60 max-w-xl text-lg">
@@ -90,7 +90,7 @@ export default function Skills() {
           <motion.div
             key={cat.title}
             variants={itemVariants}
-            className="group glass-card p-8 rounded-[2.5rem] relative overflow-hidden"
+            className="group glass-card p-6 rounded-3xl md:p-8 md:rounded-[2.5rem] relative overflow-hidden"
           >
             <div className="absolute top-0 right-0 w-32 h-32 bg-accent-primary/5 rounded-full -mr-16 -mt-16 blur-3xl group-hover:bg-accent-primary/10 transition-colors" />
             

@@ -3,7 +3,7 @@ import { Mail, Github, Linkedin, MessageSquare, Send } from "lucide-react";
 
 export default function Contact() {
   return (
-    <section id="contact" className="px-6 py-24 max-w-7xl mx-auto relative overflow-hidden">
+    <section id="contact" className="px-6 py-16 md:py-24 max-w-7xl mx-auto relative overflow-hidden">
       {/* Background Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent-primary/10 rounded-full blur-[120px] pointer-events-none" />
 
@@ -11,14 +11,14 @@ export default function Contact() {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="relative glass p-12 md:p-20 rounded-[3rem] border border-white/10 text-center"
+        className="relative glass p-8 md:p-20 rounded-3xl md:rounded-[3rem] border border-white/10 text-center"
       >
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent-primary/10 border border-accent-primary/20 text-xs font-bold text-accent-primary uppercase tracking-widest mb-8">
           <MessageSquare size={14} />
           Get In Touch
         </div>
 
-        <h2 className="text-4xl md:text-6xl font-black mb-6 leading-tight">
+        <h2 className="text-[2.25rem] md:text-6xl font-black mb-6 leading-tight">
           Let’s Build Something <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-primary to-accent-secondary">Extraordinary</span>
         </h2>

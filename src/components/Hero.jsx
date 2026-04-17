@@ -26,7 +26,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative pt-32 md:pt-48 pb-20 px-6 max-w-7xl mx-auto overflow-hidden"
+      className="relative pt-28 md:pt-48 pb-16 md:pb-20 px-6 max-w-7xl mx-auto overflow-hidden"
     >
       <motion.div 
         variants={containerVariants}
@@ -47,7 +47,7 @@ export default function Hero() {
             👋 Hello, I’m
           </motion.p>
 
-          <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl lg:text-8xl font-black leading-[1.1] mb-6">
+          <motion.h1 variants={itemVariants} className="text-[2.75rem] md:text-7xl lg:text-8xl font-black leading-[1.1] mb-6">
             Manav <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-primary bg-[length:200%_auto] animate-gradient-flow">
               Bharti
@@ -110,7 +110,7 @@ export default function Hero() {
           <div className="absolute -top-20 -right-20 w-64 h-64 bg-accent-primary/20 rounded-full blur-[100px] animate-pulse-slow" />
           <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-accent-secondary/10 rounded-full blur-[100px] animate-pulse-slow" />
           
-          <div className="relative glass-card p-10 rounded-[3rem] border border-white/10 overflow-hidden group">
+          <div className="relative glass-card p-6 md:p-10 rounded-3xl md:rounded-[3rem] border border-white/10 overflow-hidden group">
             <div className="absolute inset-0 bg-gradient-to-br from-accent-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             
             <p className="text-sm font-bold text-accent-secondary uppercase tracking-widest mb-6">Expertise</p>
