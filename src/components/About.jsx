@@ -3,8 +3,8 @@ import { User, Code2, Rocket, Heart } from "lucide-react";
 
 export default function About() {
   const stats = [
-    { icon: User, label: "Role", value: "MERN Stack Developer" },
-    { icon: Code2, label: "Focus", value: "React + Full Stack" },
+    { icon: User, label: "Role", value: "Frontend Developer" },
+    { icon: Code2, label: "Focus", value: "Backend + AI" },
     { icon: Rocket, label: "Experience", value: "Fresher / Passionate" },
     { icon: Heart, label: "Passions", value: "Clean Code & UI/UX" },
   ];
@@ -79,7 +79,7 @@ export default function About() {
             </h3>
 
             <div className="grid gap-6">
-              {stats.map((stat, i) => (stat.label !== "Role" || stat.value !== "MERN Stack Developer") && (
+              {stats.map((stat, i) => (stat.label !== "Role" || stat.value !== "Frontend Developer") && (
                 <div key={stat.label} className="group">
                   <p className="text-xs font-bold text-white/40 uppercase tracking-widest mb-1 group-hover:text-accent-secondary transition-colors">{stat.label}</p>
                   <p className="text-lg font-semibold text-white/90">{stat.value}</p>
