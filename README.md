@@ -98,6 +98,3 @@ If you want to connect with me:
 * **GitHub:**
   https://github.com/manavv09
 
----
-
-⭐ If you like this project, consider giving it a **star** on GitHub!
